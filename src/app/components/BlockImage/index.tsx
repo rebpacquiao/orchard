@@ -65,7 +65,7 @@ export default function BlockImage() {
   return (
     <section ref={sectionRef} className="py-12 md:py-[120px] px-4 md:px-[147px] overflow-hidden">
       <div className="grid grid-cols-1 gap-3 lg:grid-cols-2 xl:grid-cols-[372px_372px_1fr]">
-        {/* Left Image */}
+   
         <div 
           ref={leftImgRef}
           className="relative w-full h-[600px] lg:w-[372px]"
