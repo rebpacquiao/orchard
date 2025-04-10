@@ -43,10 +43,10 @@ body {
 }
 
 .top-description {
-  height: 330px;
+
     align-self: stretch;
     flex-grow: 0;
-   
+    margin-bottom: 30px;
     font-size: 21px;
     font-weight: 300;
     font-stretch: normal;

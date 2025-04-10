@@ -16,29 +16,33 @@ export default function BlockImage() {
                         />
                     </div>
                     <div className="flex flex-col flex-grow">
-                        <div className="relative ml-0 mt-5 w-[372px] h-[295px] mb-2.5 lg:mt-0">
+                        <div className="relative ml-0 mt-5 w-[330px] lg:w-[372px] h-[295px] mb-2.5 lg:mt-0">
                             <Image
                                 src='/images/block-top-right-img.png'
-                                width={372}
-                                height={295}
+                               
                                 alt="Block top right image"
                                 className="object-cover w-full h-full"
+                                fill
+                                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                                quality={100}
                             />
                         </div>
-                        <div className="relative ml-0 mt-5 w-[372px] h-[295px] mb-2.5 lg:mt-0">
+                        <div className="relative ml-0 mt-5 w-[330px] lg:w-[372px] h-[295px] mb-2.5 lg:mt-0">
                             <Image
                                 src='/images/block-bottom-right-img.png'
-                                width={372}
-                                height={295}
+                              
                                 alt="Block bottom right image"
                                 className="object-cover w-full h-full"
+                                fill
+                                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                                quality={100}
                             />
                         </div>
                        
 
                     </div>
                     
-                    <div className="flex flex-col flex-grow lg:mr-2 mt-4 lg:mt-0">
+                    <div className="lg:mr-2 mt-4 lg:mt-0">
                         <h2 className="block-title mb-5">
                             WHAT DOES COOKING MEAN?
                             
