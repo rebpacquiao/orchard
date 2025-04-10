@@ -4,42 +4,48 @@ export default function BlockImage() {
     return(
         <>
             <section className="py-12 md:py-[120px] px-4 md:px-[147px]">
-                <div className="grid grid-cols-1 justify-start items-start mx-auto gap-3 lg:grid-cols-[auto_auto] xl:grid-cols-[auto_auto_1fr]">
-                    <div className="relative flex-shrink-0">
+              
+                <div className="grid grid-cols-1 gap-3 lg:grid-cols-2 xl:grid-cols-[372px_372px_1fr]">
+                  
+                    <div className="relative w-full h-[600px] lg:w-[372px]">
                         <Image
                             src='/images/block-left-img.png'
-                            width={372}
-                            height={600}
+                            fill
                             alt="Block left image"
                             className="object-cover"
                             sizes="(max-width: 768px) 100vw, 372px"
                         />
                     </div>
-                    <div className="grid grid-rows-2 gap-3">
-                        <div className="relative w-[330px] lg:w-[372px] h-[295px]">
+                    
+                  
+                    <div className="grid grid-rows-2 gap-3 h-[600px] lg:w-[372px]">
+                       
+                        <div className="relative w-full h-[295px]">
                             <Image
                                 src='/images/block-top-right-img.png'
-                                alt="Block top right image"
-                                className="object-cover w-full h-full"
                                 fill
-                                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                                alt="Block top right image"
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 372px"
                                 quality={100}
                             />
                         </div>
-                        <div className="relative w-[330px] lg:w-[372px] h-[295px]">
+                        
+                     
+                        <div className="relative w-full h-[295px]">
                             <Image
                                 src='/images/block-bottom-right-img.png'
-                                alt="Block bottom right image"
-                                className="object-cover w-full h-full"
                                 fill
-                                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                                alt="Block bottom right image"
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 372px"
                                 quality={100}
                             />
                         </div>
                     </div>
                     
-                    
-                    <div className="lg:col-span-2 xl:col-auto mt-4 lg:mt-0">
+       
+                    <div className="lg:col-span-2 xl:col-span-1 mt-4 xl:mt-0">
                         <h2 className="block-title mb-5">
                             WHAT DOES COOKING MEAN?
                         </h2>
