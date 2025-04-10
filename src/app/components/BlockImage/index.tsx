@@ -37,10 +37,12 @@ export default function BlockImage() {
 
                     </div>
                     
-                    <div className="flex flex-col flex-grow">
-                        <h2 className="block-title">
+                    <div className="flex flex-col flex-grow lg:ml-8 lg:mr-8 mt-4 lg:mt-0">
+                        <h2 className="block-title mb-5">
                             WHAT DOES COOKING MEAN?
+                            
                         </h2>
+                       <div className="Headline"></div>
                         <p className="top-description">
                         Is it simply applying heat to a food product? A way of making certain food safe to eat? Or a way to create flavour and make food more appealing? This is just part of what Hervé This, the father of molecular gastronomy, has dedicated his life to finding out. We spoke to him to find out what his experiments have told him. And in the process even discovered the secret to cooking the perfect egg...     </p>
                         <div>
