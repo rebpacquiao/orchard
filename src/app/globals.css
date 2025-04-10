@@ -97,3 +97,19 @@ body {
   margin-bottom: 15px;
   border-bottom: solid 1px #fff;
 }
+
+.taste-colors {
+  font-size: 30px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  width: 348px;
+  padding-bottom: 38px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+}

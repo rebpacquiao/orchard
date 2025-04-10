@@ -5,8 +5,8 @@ export default function BlockCards() {
     return (
         <section className="py-12 md:py-[120px] px-4 md:px-[147px]">
             <div className="max-w-[1240px] mx-auto">
-                <h1 className="text-3xl md:text-4xl font-bold text-center text-white mb-8 md:mb-12 uppercase">Taste the colours</h1>
-                
+                <h1 className="text-3xl md:text-4xl font-bold text-center text-white mb-8 md:mb-12 uppercase taste-colors">Taste the colours</h1>
+             
                 <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-3">
                     {data.map((item: any) => (
                         <div 
@@ -24,8 +24,8 @@ export default function BlockCards() {
                                 />
                             </div>
                             <div className="flex-grow text-white">
-                                <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 uppercase">{item.color}</h2>
-                                <p className="text-white">{item.description}</p>
+                                <h2 className="text-xl md:text-2xl  mb-2 md:mb-3 text-center">{item.color}</h2>
+                                <p className="text-white text-center">{item.description}</p>
                             </div>
                         </div>
                     ))}

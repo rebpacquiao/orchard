@@ -3,19 +3,20 @@ import Image from 'next/image';
 export default function BlockImage() {
     return(
         <>
-            <section className="py-12 md:py-[120px] px-4 md:px-[147px] h-[840px] ">
-                <div className="flex flex-col md:flex-row justify-start items-start mx-auto">
+            <section className="py-12 md:py-[120px] px-4 md:px-[147px]">
+                <div className="flex flex-col justify-start items-start mx-auto gap-3 xl:flex-row">
                     <div className="relative flex-shrink-0">
                         <Image
                             src='/images/block-left-img.png'
                             width={372}
                             height={600}
                             alt="Block left image"
-                            className="object-cover w-full h-full"
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, 372px"
                         />
                     </div>
                     <div className="flex flex-col flex-grow">
-                        <div className="relative w-[372px] h-[295px] mb-2.5 ml-2.5">
+                        <div className="relative ml-0 mt-5 w-[372px] h-[295px] mb-2.5 lg:mt-0">
                             <Image
                                 src='/images/block-top-right-img.png'
                                 width={372}
@@ -24,7 +25,7 @@ export default function BlockImage() {
                                 className="object-cover w-full h-full"
                             />
                         </div>
-                        <div className="relative w-[372px] h-[295px] mt-2.5 ml-2.5">
+                        <div className="relative ml-0 mt-5 w-[372px] h-[295px] mb-2.5 lg:mt-0">
                             <Image
                                 src='/images/block-bottom-right-img.png'
                                 width={372}
@@ -37,7 +38,7 @@ export default function BlockImage() {
 
                     </div>
                     
-                    <div className="flex flex-col flex-grow lg:ml-8 lg:mr-8 mt-4 lg:mt-0">
+                    <div className="flex flex-col flex-grow lg:mr-2 mt-4 lg:mt-0">
                         <h2 className="block-title mb-5">
                             WHAT DOES COOKING MEAN?
                             

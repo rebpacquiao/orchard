@@ -2,7 +2,7 @@
 [
     {
       "id": 1,
-      "color": "RED",
+      "color": "Red",
       "description": "Red foods remind us of berries and soft fruits, so we anticipate a sweet taste.",
       "image": "/images/red-img.png"
     },
