@@ -6,7 +6,6 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import data from '../../../data/block3-cards.json';
 import Image from 'next/image';
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 export default function BlockCards() {
@@ -21,7 +20,7 @@ export default function BlockCards() {
   };
 
   useEffect(() => {
-
+   
     gsap.from(headingRef.current, {
       opacity: 0,
       y: 50,
@@ -29,7 +28,6 @@ export default function BlockCards() {
       ease: 'power2.out',
     });
 
-  
     cardsRef.current.forEach((card, index) => {
       gsap.from(card, {
         opacity: 0,
@@ -40,7 +38,9 @@ export default function BlockCards() {
         scrollTrigger: {
           trigger: card,
           start: 'top 80%',
-          toggleActions: 'play none none none',
+          end: 'bottom 20%',
+          toggleActions: 'play none restart none', 
+          markers: false, 
         },
       });
     });
