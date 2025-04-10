@@ -8,12 +8,21 @@ import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+interface CardItem {
+  id: number;
+  color: string;
+  description: string;
+  image: string;
+  extendedDescription?: string;
+}
+
 export default function BlockCards() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<HTMLDivElement[]>([]);
   const headingRef = useRef<HTMLHeadingElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
-  const [activeItem, setActiveItem] = useState<any>(null);
+  const [activeItem, setActiveItem] = useState<CardItem | null>(null);
 
   const addToCardsRef = (el: HTMLDivElement | null) => {
     if (el && !cardsRef.current.includes(el)) {
@@ -21,7 +30,7 @@ export default function BlockCards() {
     }
   };
 
-  const openModal = (item: any) => {
+  const openModal = (item: CardItem) => {
     setActiveItem(item);
     gsap.to(modalRef.current, {
       autoAlpha: 1,
@@ -83,7 +92,7 @@ export default function BlockCards() {
           </h1>
         
           <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-3">
-            {data.map((item: any) => (
+            {data.map((item: CardItem) => (
               <div 
                 key={item.id}
                 ref={addToCardsRef}
